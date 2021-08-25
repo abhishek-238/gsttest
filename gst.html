@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo5"></p>
+    price:<input type="number" id="demo1">
+    Quantity:<input type="number" id="demo2">
+    Tax:<input type="number" id="demo3"><br><br>
+    Total:<input type="Text" id="demo4">
+    <button id="btn" onclick="fun()">Click me!</button>
+
+    <br><br>
+    <script>
+        function fun(){
+        var price,Quantity,Tax,Result,Total;
+        price = document.getElementById("demo1").value;
+        Quantity = document.getElementById("demo2").value;
+        Tax = document.getElementById("demo3").value;
+        Result = price * Quantity * Tax/100;
+        Total= price * Quantity + Result;
+         document.getElementById("demo4").value = Total;
+        }
+    </script>
+    
+</body>
+</html>
